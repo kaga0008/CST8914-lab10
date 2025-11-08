@@ -62,9 +62,9 @@ class MenuButtonActions {
   setFocusToMenuitem(newMenuitem) {
     this.menuitemNodes.forEach(function (item) {
 // TOUFIC'S COMMENT: Placeholder for the roving tabindex logic  ;)
-      if(item === newTreeElement) {
+      if (item === newMenuitem) {
         item.tabIndex = 0;
-        newTreeElement.focus();
+        newMenuitem.focus();
       } else {
         item.tabIndex = -1;
       }
